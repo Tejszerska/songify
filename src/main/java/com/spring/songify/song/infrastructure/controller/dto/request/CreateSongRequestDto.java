@@ -4,10 +4,12 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 
 public record CreateSongRequestDto(
-        @NotNull(message = "songName can't be null!")
-        @NotEmpty(message = "songName can't be empty!")
+        @NotNull(message = "name must not be null")
+        @NotEmpty(message = "name must not be empty")
         String songName,
-        @NotNull(message = "artist can't be null!")
-        @NotEmpty(message = "artist can't be empty!")
-        String artist) {
+
+        @NotNull(message = "artist must not be null")
+        @NotEmpty(message = "artist must not be empty")
+        String artist
+) {
 }
