@@ -111,8 +111,10 @@ public class SongRestController {
         } else {
             builder.artist(songFromDatabase.artist());
         }
-        allSongs.put(id, updatedSong);
-        PartiallyUpdateSongResponseDto body = SongMapper.mapFromSongToPartiallyUpdateSongResponseDto(updatedSong);
+        Song songToSave = builder.build();
+
+        allSongs.put(id, songToSave);
+        PartiallyUpdateSongResponseDto body = SongMapper.mapFromSongToPartiallyUpdateSongResponseDto(songToSave);
         return ResponseEntity.ok(body);
     }
 }
