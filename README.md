@@ -7,15 +7,24 @@ Songify is a scalable RESTful API designed for managing a music database (Songs,
 The core CRUD operations are implemented with a strong emphasis on Clean Code principles, SOLID architecture, and REST API best practices, ensuring high maintainability and readability.
 <br>**Furthermore, the primary focus of this project is a highly secure Hybrid Authentication System**. It combines traditional manual registration with Google OAuth2 Login, unified under a custom RSA-signed JWT architecture.
 
-## Tech Stack
-* **Language:** Java 17
-* **Framework:** Spring Boot 3
-* **Security:** Spring Security 6, OAuth2 Client, Auth0 JWT
-* **Database:** PostgreSQL, Spring Data JPA, Hibernate
-* **Testing:** JUnit 5, Mockito, Testcontainers
-* **Documentation:** Springdoc OpenAPI (Swagger)
-* **Build Tool:** Maven
-* **DevOps:** Docker, Docker Compose
+##  Tech Stack & Tools
+
+**Backend Core:**
+*   **Java 17** & **Spring Boot 3** (Core framework)
+*   **Spring Security & OAuth2 + JWT** (Authentication & Authorization)
+*   **PostgreSQL** (Relational database)
+*   **Flyway** (Database migration and versioning)
+*   **MapStruct** (Efficient Entity-to-DTO mapping)
+
+**Testing:**
+*   **JUnit 5** (Testing framework)
+*   **Mockito** (Mocking framework for unit tests)
+*   **AssertJ** (Fluent assertions)
+
+**DevOps & Integrations:**
+*   **Docker & Docker Compose** (Containerization)
+*   **Swagger / OpenAPI** (API documentation & interactive testing)
+*   **JavaMailSender** (Email confirmation flow)
 
 ## Key Features
 * **Advanced Hybrid Security Architecture:**
